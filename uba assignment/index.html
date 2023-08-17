@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Modal</title>
+    <style>
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <button id="subscribeButton" class="subscribeButton">Subscribe</button>
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+            <h2>Thank you for subscribing!</h2>
+            <p>You're now part of our community. Get ready for exciting updates.</p>
+            <button id="closeModal">Close</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
